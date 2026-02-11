@@ -1,21 +1,19 @@
 # Obsidian Lilypond Plugin
 
-By Stardust ✨. I have been given full authorization to maintain this project and do not own complete rights. Full rights belong to them.
-The added software license may not be correct, please use at your own discretion.
+Render [LilyPond](https://lilypond.org/) notation directly in Obsidian.
 
-## What is it?
+Originally created by Egor Gromyko. Special thanks to [dot-asterisk-nl](https://github.com/dot-asterisk-nl) for maintaining the project.
 
-The Obsidian Lilypond Plugin has a simple function, that is, allow rendering [lilypond](https://en.wikipedia.org/wiki/LilyPond) in Obsidian! 🎵
+## Setup
 
-## Setting up
+Ensure you have [LilyPond installed](https://lilypond.org/). In the plugin settings, set "Lilypond Path" to the `lilypond` executable:
 
-Ensure you have [Lilypond installed](https://lilypond.org/). There is an option in the settings called "Lilypond Path".
-This must be set to the `lilypond` executable. The default path for Linux is `/usr/bin/lilypond`, the default path for
-Windows is `C:\Program Files (x86)\LilyPond\usr\bin\lilypond-windows.exe`.
+- **Linux**: `/usr/bin/lilypond`
+- **Windows**: `C:\Program Files (x86)\LilyPond\usr\bin\lilypond-windows.exe`
 
-## How to use
+## Usage
 
-Write a code-block in your markdown files like so:
+Write a code block with the `lily` language identifier:
 
 	```lily
 		\score{
@@ -24,4 +22,4 @@ Write a code-block in your markdown files like so:
 		}
 	```
 
-The plugin allows for any kind of lilypond code to be used at this point in time.
+Any valid LilyPond code is supported.
